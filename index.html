@@ -17,8 +17,11 @@
 
 <h2>Measurements for (B) Black small Solenoid</h2>
 <h3>Measurements without a soft iron core</h3>
-<img src="black_small.JPG" alt="black small time" style="width:400px;">
-<img src="black_small_no_core.gif" alt="black small gif" style="width:700px;">
+<button onclick="myFunction(myID='black_small_nocore')">Try it</button>
+<div id="black_small_nocore">
+    <img src="black_small.JPG" alt="black small time" style="width:400px;">
+    <img src="black_small_no_core.gif" alt="black small gif" style="width:700px;">
+</div>
 <h3>Measurements a soft iron core</h3>
 <img src="black_small_core.JPG" alt="black small core time" style="width:400px;">
 <img src="black_small_yes_core.gif" alt="black small core gif" style="width:700px;">
@@ -44,5 +47,17 @@
 <img src="white_core.JPG" alt="white core time" style="width:400px;">
 <img src="white_yes_core.gif" alt="white core gif" style="width:700px;">
 
+
+
+<script>
+    function myFunction(myID) {
+      var x = document.getElementById(myID);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
 </body>
 </html>
