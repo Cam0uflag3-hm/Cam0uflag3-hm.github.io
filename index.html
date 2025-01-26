@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Collected Measurements</title>
         <style>
-            /* Hide the figures by default */
-            .figure {
-              display: none;
+            /* Hide all divs containing the figures by default */
+            div {
+                display: none;
             }
-          </style>
+        </style>
     </head>
 <body>
 
@@ -37,6 +37,7 @@
     <img src="black_small_core.JPG" alt="black small core time" style="width:400px;">
     <img src="black_small_yes_core.gif" alt="black small core gif" style="width:700px;">
 </div>
+
 <h2>Measurements for (C) Green Solenoid</h2>
 <h3>Measurements without a soft iron core</h3>
 <button onclick="myFunction(myID='green_no_core')">Show Measurements of (C)green without core</button>
@@ -50,6 +51,7 @@
     <img src="green_core.JPG" alt="green core time" style="width:400px;">
     <img src="green_yes_core.gif" alt="green core gif" style="width:700px;">
 </div>
+
 <h2>Measurements for (D) Black big Solenoid</h2>
 <h3>Measurements without a soft iron core</h3>
 <button onclick="myFunction(myID='black_big')">Show Measurements of (D)black big without core</button>
@@ -63,6 +65,7 @@
     <img src="black_bigg_core.JPG" alt="black big core time" style="width:400px;">
     <img src="black_big_yes_core.gif" alt="black big core gif" style="width:700px;">
 </div>
+
 <h2>Measurements for (E) White Solenoid</h2>
 <h3>Measurements without a soft iron core</h3>
 <button onclick="myFunction(myID='white')">Show Measurements of (E)white without core</button>
@@ -77,19 +80,16 @@
     <img src="white_yes_core.gif" alt="white core gif" style="width:700px;">
 </div>
 
-<div id="black_small_core">
-
-</div>
-
 <script>
     function myFunction(myID) {
       var x = document.getElementById(myID);
-      if (x.style.display === "none") {
+      if (x.style.display === "none" || x.style.display === "") {
         x.style.display = "block";
       } else {
         x.style.display = "none";
       }
     }
-    </script>
+</script>
+
 </body>
 </html>
